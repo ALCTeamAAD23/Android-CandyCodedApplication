@@ -47,7 +47,8 @@ public class InfoActivity extends AppCompatActivity {
     // ***
     public void createPhoneIntent(View view){
         Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
-        phoneIntent.setData(Uri.parse("tel:012345-6789"));
+        Uri uriPhoneno = Uri.parse("tel-0123456789");
+        phoneIntent.setData(uriPhoneno);
         startActivity(phoneIntent);
     }
 }
