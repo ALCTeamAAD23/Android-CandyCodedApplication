@@ -41,7 +41,14 @@ public class InfoActivity extends AppCompatActivity {
          }
 
      }
+     // Nelson end map code
     // ***
     // TODO - Task 3 - Launch the Phone Activity
     // ***
+    //nelson start phone code
+    public void createPhoneIntent(View view){
+        Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+        phoneIntent.setData(Uri.parse("tel:012345-6789"));
+        startActivity(phoneIntent);
+    }
 }
