@@ -51,4 +51,6 @@ public class InfoActivity extends AppCompatActivity {
         phoneIntent.setData(Uri.parse("tel:012345-6789"));
         startActivity(phoneIntent);
     }
+
+    // end of Nelson start phone code:
 }
